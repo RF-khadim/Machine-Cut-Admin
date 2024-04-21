@@ -1,0 +1,44 @@
+.material-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+}
+
+.material-header h2 {
+  color: var(--secondary-color);
+}
+
+.add-material-btn {
+  height: 40px;
+  padding: 0 25px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.material-modal-content {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.submit {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}

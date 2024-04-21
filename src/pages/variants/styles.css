@@ -1,0 +1,125 @@
+.variant-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+}
+
+.variant-header h2 {
+  color: var(--secondary-color);
+}
+
+.variant-update-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  height: 35px;
+  padding: 0 25px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.variant-modal {
+  padding: 20px;
+}
+
+.variant-modal button {
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.input-control {
+  margin: 10px;
+  box-sizing: border-box;
+}
+.input-control label {
+  color: var(--dark-grey);
+}
+.input-control input,
+select {
+  display: block;
+  border-radius: 5px;
+  padding: 0 5px 0 10px;
+  height: 40px;
+  margin-top: 8px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1.5px solid var(--primary-color);
+}
+.error-message {
+  font-size: small;
+  color: var(--red);
+}
+
+.variant-grid {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 20px;
+}
+.variant-grid h5 {
+  color: var(--dark-grey);
+}
+
+.grid {
+  padding: 20px;
+  background: var(--white);
+  margin-bottom: 20px;
+  border: 1px solid var(--grey);
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.search-control {
+  width: 60%;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid #c0c0ce;
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  outline: none;
+}
+
+.delete {
+  background-color: #f2f4f6;
+}
+
+.variant-default-image{
+  margin-top: 10px;
+}
+
+
+@media (max-width: 796px) {
+  .variant-grid {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+}

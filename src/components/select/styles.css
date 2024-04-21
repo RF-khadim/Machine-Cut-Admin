@@ -1,0 +1,16 @@
+.select-input {
+  display: block;
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  height: auto;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid var(--primary-color);
+}
+
+select{
+  width: 100% ;
+}

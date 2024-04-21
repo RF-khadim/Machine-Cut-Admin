@@ -1,0 +1,21 @@
+.cut-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cut-header h2 {
+  color: var(--secondary-color);
+}
+
+.add-cut-btn {
+  height: 30px;
+  width: fit-content;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}

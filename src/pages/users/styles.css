@@ -1,0 +1,45 @@
+.user-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-header h2 {
+  color: var(--secondary-color);
+}
+
+.add-user-btn {
+  height: 30px;
+  width: fit-content;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.input-control {
+  margin: 10px;
+}
+.input-control input,select {
+  display: block;
+  border-radius: 20px;
+  padding: 0 5px 0 10px;
+  height: 30px;
+  width: 100%;
+  border: 1.5px solid var(--primary-color);
+}
+.error-message {
+  font-size: small;
+  color: var(--red);
+}
+
+.user-modal-content {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}

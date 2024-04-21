@@ -1,0 +1,254 @@
+.input-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.input-control input,
+textarea {
+  display: block;
+  border-radius: 0px;
+  box-sizing: border-box;
+  height: 30px;
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid var(--primary-color);
+}
+
+.input-control select {
+  width: 100%;
+}
+
+.text-area-box {
+  padding: 15px 50px;
+}
+
+.improvements-box {
+  width: 50%;
+  border: none;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  height: 150px;
+}
+
+.input-control label {
+  color: var(--dark-grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error-message {
+  color: var(--red);
+}
+
+button {
+  height: 40px;
+  width: fit-content;
+  padding: 0 25px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* INFO START ------------------------------------------------------------ */
+
+.info-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-heading > p::before {
+  content: ">";
+  font-size: 15px;
+}
+
+.info-container {
+  padding: 20px;
+}
+
+.info-container h3 {
+  color: var(--dark-grey);
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.desc {
+  display: grid;
+  grid-template-columns: 30% 40%;
+  margin-bottom: 20px;
+}
+
+.first {
+  color: var(--dark-grey);
+}
+
+.second {
+  color: var(--black);
+}
+
+/* INFO END ------------------------------------------------------------ */
+
+/* Add Machine Start ------------------------------------------------------------ */
+
+.add-container {
+  padding: 20px;
+}
+
+.add-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-heading > p::before {
+  content: ">";
+  font-size: 15px;
+}
+
+.add-machine-detail-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 20px 50px;
+}
+
+.add-machine-description-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+button {
+  height: 40px;
+  padding: 0 25px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.refresh {
+  background-color: var(--orange);
+  border: none !important;
+  color: white;
+}
+
+.machine-controls {
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+.machine-name-type {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px 50px;
+  gap: 70px;
+}
+
+.connected {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 5px;
+}
+
+.disconnected {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Add Machine END ------------------------------------------------------------ */
+
+/* FIRMWARE  START*/
+
+.firmware-file {
+  width: 80%;
+  margin-top: 20px;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.firmware-file h4 {
+  font-weight: 500;
+}
+
+.f-file {
+  background-color: var(--white);
+  display: flex;
+  padding: 5px;
+  width: 200px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+/* FIRMWARE END */
+
+/* MEDIA QUERY */
+@media (max-width: 796px) {
+  .add-machine-detail-container,
+  .add-machine-description-container {
+    width: 100% !important;
+  }
+  .input-control {
+    width: 100% !important;
+  }
+  .machine-name-type {
+    padding: 5px;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .input-control select {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  .improvements-box {
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .add-container {
+    padding: 5px !important;
+  }
+  .add {
+    flex-direction: column;
+    padding: 5px !important;
+  }
+  .text-area-box {
+    padding: 5px !important;
+  }
+  .improvements-box {
+    width: 100%;
+  }
+  .machine-controls {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,109 @@
+.notification-container {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.notification {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 30px;
+}
+
+.notification h5 {
+  color: var(--dark-grey) !important;
+}
+
+.notification-detail {
+  background-color: var(--white);
+  padding: 20px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 10px;
+}
+
+.notification-detail > div {
+  width: 100%;
+}
+
+.all-machine-notification{
+    display: flex;
+
+    gap: 20px;
+}
+
+.input-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.input-control input,
+.text-area {
+  display: block;
+  border-radius: 0px;
+  box-sizing: border-box;
+  height: 30px;
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  border: 1.5px solid var(--primary-color);
+}
+
+.text-area {
+  width: 75%;
+  height: 150px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em !important;
+}
+
+.input-control label {
+  color: var(--dark-grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error-message {
+  color: var(--red);
+}
+
+.send-not-btn, button {
+  height: 40px;
+  width: 150px;
+  padding: 0 25px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 796px) {
+  .notification-container {
+    width: 100%;
+  }
+
+  .input-control{
+    width: 100%;
+  }
+
+
+  textarea{
+    width: 100%;
+  }
+
+  .notification {
+    grid-template-columns: 1fr !important;
+  }
+
+  .all-machine-notification{
+    flex-wrap: wrap;
+  }
+
+  button{
+    width: 100% !important;
+  }
+}
+
